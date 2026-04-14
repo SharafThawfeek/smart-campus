@@ -1,0 +1,50 @@
+/* ---- Shared Page Styles ---- */
+
+/* Resource Cards */
+.resource-card { padding: var(--space-xl); }
+.resource-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-md); }
+.resource-type-icon { font-size: 1.8rem; }
+.resource-name { font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--space-md); }
+.resource-details { display: flex; flex-direction: column; gap: var(--space-xs); }
+.resource-detail { font-size: var(--font-size-sm); color: var(--text-secondary); }
+
+/* Ticket Cards */
+.ticket-card { transition: all var(--transition-normal); }
+.ticket-card:hover { transform: translateY(-2px); border-color: var(--border-active); }
+
+/* Comment Items */
+.comment-item {
+  padding: var(--space-md);
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Notification Items */
+.notifications-list { display: flex; flex-direction: column; gap: var(--space-sm); }
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg) !important;
+  transition: all var(--transition-fast);
+}
+.notification-item.unread { border-color: var(--primary); background: rgba(99,102,241,0.05); }
+.notification-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+}
+.notification-content { flex: 1; }
+.notification-message { font-size: var(--font-size-sm); margin-bottom: 4px; }
+.notification-time { font-size: var(--font-size-xs); color: var(--text-muted); }
+.notification-actions { display: flex; gap: var(--space-xs); }
+
+/* Admin Table Actions */
+.table-actions { display: flex; gap: var(--space-xs); }
+
+/* Form in Modal */
+.modal-content .form-group { margin-bottom: var(--space-md); }
